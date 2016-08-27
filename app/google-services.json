@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1027338981484",
+    "firebase_url": "https://wewrite-e6d7f.firebaseio.com",
+    "project_id": "wewrite-e6d7f",
+    "storage_bucket": "wewrite-e6d7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027338981484:android:12a40ca262fbc02f",
+        "android_client_info": {
+          "package_name": "dankmemes.wewrite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027338981484-7g4327ivs0g6kfg251848rqrahee42c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn-BfXfKaTy0SfahdzyUPDOzo5rDd5I6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

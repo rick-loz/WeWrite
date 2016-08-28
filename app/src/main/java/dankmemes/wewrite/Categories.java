@@ -3,6 +3,7 @@ package dankmemes.wewrite;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -29,7 +30,11 @@ public class Categories extends Activity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent GoToLobby = new Intent(dankmemes.wewrite.Categories. this, RoomSelection.class);
+                String data=(String)parent.getItemAtPosition(position);
+
+                Intent GoToLobby = new Intent(Categories.this, RoomSelection.class);
+                Log.v("Ricky", data);
+                GoToLobby.putExtra("Category", data);
                 startActivity (GoToLobby);
             }
         });

@@ -1,7 +1,37 @@
 package dankmemes.wewrite;
 
-/**
- * Created by ricky on 27/08/2016.
- */
-public class Categories {
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class Categories extends Activity {
+
+
+    String Categories[] = {
+            "Science Fiction", "Romance", "Satire", "Comedy", "Horror", "Fantasy", "Child Story"
+    };
+    ListView lv;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_categories);
+
+        lv = (ListView) findViewById(R.id.lvItems);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(dankmemes.wewrite.Categories. this, android.R.layout.simple_list_item_1, Categories);
+
+        lv.setAdapter(adapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent GoToLobby = new Intent(dankmemes.wewrite.Categories. this, RoomSelection.class);
+                startActivity (GoToLobby);
+            }
+        });
+    }
 }

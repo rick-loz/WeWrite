@@ -12,7 +12,8 @@ Compile the files on android studio
 
 ## API Reference
 
-https://developers.facebook.com/docs/facebook-login /n
+https://developers.facebook.com/docs/facebook-login
+
 https://www.firebase.com/docs/android/api/
 
 ## Tests
